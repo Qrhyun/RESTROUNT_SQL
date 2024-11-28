@@ -2,7 +2,8 @@ CREATE TABLE sup (
     Sid INT AUTO_INCREMENT PRIMARY KEY,  -- 供应商ID，自动递增主键
     Sname VARCHAR(100) NOT NULL,         -- 供应商名称，字符串，必填
     Sadd VARCHAR(255),                   -- 供应商地址，字符串，可选
-    phone VARCHAR(20)                    -- 供应商电话，字符串，可选
+    phone VARCHAR(20)   
+                     -- 供应商电话，字符串，可选
 );
 
 CREATE TABLE mat (
