@@ -22,6 +22,7 @@ END //
 
 CREATE PROCEDURE GetRemainingMoney(user_id INT)
 BEGIN
+
     SELECT money
     FROM buy
     WHERE Bid = user_id;
