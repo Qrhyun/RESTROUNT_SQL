@@ -397,3 +397,8 @@ INSERT INTO bbv (Bid, Vid, Bnum) VALUES
 (29, 41, 1), (29, 42, 1), (29, 43, 2), (29, 44, 1), (29, 45, 1),
 (30, 46, 1), (30, 47, 2), (30, 48, 1), (30, 49, 1), (30, 50, 2);
 
+UPDATE bbv
+SET Btime = CASE
+               WHEN RAND() < 0.0333 THEN Btime
+               ELSE DATE_ADD(DATE_FORMAT(Btime, '%Y-%m-01 00:00:00'), INTERVAL FLOOR(RAND() * 30) DAY)
+           END;

@@ -17,7 +17,7 @@ BEGIN
         buy.Bid = user_id
     ORDER BY
         bbv.Bid DESC
-    LIMIT 1; -- 最近一条购买记录
+    LIMIT 5; -- 最近一条购买记录
 END //
 
 CREATE PROCEDURE GetRemainingMoney(user_id INT)
@@ -27,6 +27,6 @@ BEGIN
     FROM buy
     WHERE Bid = user_id;
 
-END;
-//
+END;//
+
 DELIMITER ;
