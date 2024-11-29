@@ -56,8 +56,8 @@ BEGIN
         buy.Bid AS UserID,
         buy.Bname AS UserName,
         bbv.Bnum AS Quantity,
-        bbv.Bdate AS PurchaseDate,
-        bbv.Btime AS PurchaseTime -- 添加时间列
+        bbv.Btime AS PurchaseDate
+    
     FROM
         bbv
     INNER JOIN veg ON bbv.Vid = veg.Vid
@@ -65,7 +65,7 @@ BEGIN
     WHERE
         bbv.Vid = dish_id
     ORDER BY
-        bbv.Bdate DESC;
+        bbv.Btime DESC;
 END //
 
 DELIMITER ;
