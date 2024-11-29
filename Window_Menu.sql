@@ -56,7 +56,8 @@ BEGIN
         buy.Bid AS UserID,
         buy.Bname AS UserName,
         bbv.Bnum AS Quantity,
-        bbv.Bdate AS PurchaseDate
+        bbv.Bdate AS PurchaseDate,
+        bbv.Btime AS PurchaseTime -- 添加时间列
     FROM
         bbv
     INNER JOIN veg ON bbv.Vid = veg.Vid
