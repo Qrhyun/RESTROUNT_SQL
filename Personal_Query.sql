@@ -35,9 +35,10 @@ DELIMITER ;
 
 DELIMITER //
 
+
 CREATE FUNCTION GetTotalSpent(user_id INT) RETURNS DECIMAL(10, 2)
+DETERMINISTIC
 BEGIN
---DECIMAL(10, 2) 是一种数据类型，用于表示具有固定小数位数的精确数值。它通常用于存储货币或其他需要精确小数的数值。
     DECLARE total_spent DECIMAL(10, 2);
     SELECT SUM(veg.Vprice * bbv.Bnum) INTO total_spent
     FROM bbv
@@ -47,4 +48,4 @@ BEGIN
 END //
 
 DELIMITER ;
---bbv表根据传入的用户 ID 查询并返回该用户的总消费金额
+--bbv表根据传入的用户 ID 查询并返回该用户的总消费金额，--DECIMAL(10, 2) 是一种数据类型，用于表示具有固定小数位数的精确数值。它通常用于存储货币或其他需要精确小数的数值。
