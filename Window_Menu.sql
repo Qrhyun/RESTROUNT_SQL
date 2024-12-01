@@ -1,4 +1,3 @@
-
 DELIMITER //
 
 CREATE PROCEDURE CreateWindowViews()
@@ -45,26 +44,12 @@ BEGIN
 END //
 
 DELIMITER ;
--- 根据 win 表中的数据动态创建多个视图，每个视图包含与特定窗口相关的菜品及其对应的厨师信息。
 
-
-
-
+--根据 win 表中的数据动态创建多个视图，每个视图包含与特定窗口相关的菜品及其对应的厨师信息。
+DELIMITER //
 
 CREATE PROCEDURE QueryVegPurchases(IN dish_id INT)
 BEGIN
-    -- 创建临时表
-    CREATE TEMPORARY TABLE IF NOT EXISTS TempVegPurchases (
-        DishID INT,
-        DishName VARCHAR(100),
-        UserID INT,
-        UserName VARCHAR(100),
-        Quantity INT,
-        PurchaseDate DATETIME
-    );
-
-    -- 将查询结果插入临时表
-    INSERT INTO TempVegPurchases (DishID, DishName, UserID, UserName, Quantity, PurchaseDate)
     SELECT
         bbv.Vid AS DishID,
         veg.Vname AS DishName,
@@ -72,6 +57,7 @@ BEGIN
         buy.Bname AS UserName,
         bbv.Bnum AS Quantity,
         bbv.Btime AS PurchaseDate
+    
     FROM
         bbv
     INNER JOIN veg ON bbv.Vid = veg.Vid
@@ -80,14 +66,10 @@ BEGIN
         bbv.Vid = dish_id
     ORDER BY
         bbv.Btime DESC;
+END //
 
-END;
--- 根据传入的菜品 ID 查询所有窗口的该菜品的所有购买记录，并返回相关信息，包括菜品 ID、菜品名称、用户 ID、用户名、购买数量和购买日期。通过调用这个存储过程，后端可以方便地获取指定菜品的购买记录。
-
-
-
-
-
+DELIMITER ;
+--根据传入的菜品 ID 查询所有窗口的该菜品的所有购买记录，并返回相关信息，包括菜品 ID、菜品名称、用户 ID、用户名、购买数量和购买日期。通过调用这个存储过程，后端可以方便地获取指定菜品的购买记录。
 
 
 DELIMITER //
