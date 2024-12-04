@@ -88,3 +88,12 @@ CREATE TABLE bbv (
     FOREIGN KEY (Bid) REFERENCES buy(Bid), -- 设置Sid为外键，引用sup表的Sid
     FOREIGN KEY (Vid) REFERENCES veg(vid)  -- 设置Wid为外键，引用win表的Wid
 );
+
+ALTER TABLE bbv DROP FOREIGN KEY bbv_ibfk_1;
+ALTER TABLE bbv DROP FOREIGN KEY bbv_ibfk_2;
+ALTER TABLE bbv
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (Bid, Vid, Btime);
+ALTER TABLE bbv
+ADD CONSTRAINT bbv_ibfk_1 FOREIGN KEY (Bid) REFERENCES buy (Bid),
+ADD CONSTRAINT bbv_ibfk_2 FOREIGN KEY (Vid) REFERENCES veg (Vid);

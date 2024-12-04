@@ -116,3 +116,16 @@ END //
 
 DELIMITER ;
 
+DELIMITER //
+
+CREATE PROCEDURE GetTop5Windows()
+BEGIN
+    SELECT *
+    FROM win
+    ORDER BY Wid DESC
+    LIMIT 5;
+END//
+
+DELIMITER ;
+
+
