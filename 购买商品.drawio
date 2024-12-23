@@ -1,9 +1,75 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.3">
   <diagram name="第 1 页" id="doR8K6rguRYrCIV9Dp1M">
-    <mxGraphModel>
+    <mxGraphModel dx="899" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-1" value="购买记录查询" style="rounded=1;whiteSpace=wrap;html=1;textDirection=vertical-lr;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="40" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-15" target="icBvC6Z2mXKZj48FAbFD-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-2" value="用户是否存在" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="130" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-3" target="icBvC6Z2mXKZj48FAbFD-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-3" value="查询时间是否允许" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-1" target="icBvC6Z2mXKZj48FAbFD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-2" target="icBvC6Z2mXKZj48FAbFD-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-10" target="icBvC6Z2mXKZj48FAbFD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-10" value="查询该用户就餐记录" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-11" target="icBvC6Z2mXKZj48FAbFD-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-11" value="排序并返回前五条" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-14" target="icBvC6Z2mXKZj48FAbFD-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-14" value="&amp;nbsp; 返回报错&lt;div&gt;查询时间段不允许&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="210" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="icBvC6Z2mXKZj48FAbFD-2" target="icBvC6Z2mXKZj48FAbFD-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="280" as="targetPoint" />
+            <mxPoint x="250" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-15" value="返回报错&lt;div&gt;用户不存在&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="260" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="icBvC6Z2mXKZj48FAbFD-18" value="end" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="260" width="80" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
