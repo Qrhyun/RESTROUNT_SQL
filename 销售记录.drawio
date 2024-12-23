@@ -1,9 +1,50 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.3">
   <diagram name="第 1 页" id="wLbsWIfSssrHzzBLL76u">
-    <mxGraphModel>
+    <mxGraphModel dx="682" dy="540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PSh5uPCB5ACl-Ajhaf5w-1" target="PSh5uPCB5ACl-Ajhaf5w-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-1" value="查询菜品销售记录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="PSh5uPCB5ACl-Ajhaf5w-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="234.5" as="sourcePoint" />
+            <mxPoint x="370" y="200" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PSh5uPCB5ACl-Ajhaf5w-2" target="PSh5uPCB5ACl-Ajhaf5w-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="714" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-2" value="查询菜品id是是否存在" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="200" width="145" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PSh5uPCB5ACl-Ajhaf5w-5" target="PSh5uPCB5ACl-Ajhaf5w-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-5" value="查询该菜品是否有销售记录" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="200" width="145" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-6" value="返回销售记录前五条" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="209.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-10" value="end" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="214.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PSh5uPCB5ACl-Ajhaf5w-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.625;entryY=1.138;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PSh5uPCB5ACl-Ajhaf5w-2" target="PSh5uPCB5ACl-Ajhaf5w-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="208" y="320" />
+              <mxPoint x="800" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
