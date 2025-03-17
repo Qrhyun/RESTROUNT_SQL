@@ -1,9 +1,54 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="26.0.14">
   <diagram name="第 1 页" id="UmF8JJKeLO_rx6PZUqTP">
-    <mxGraphModel>
+    <mxGraphModel dx="885" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="CbvcSDml5hShCORD96Lc-1" value="食堂订餐管理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="180" width="650" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-2" value="座位管理" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="140" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-3" value="订餐学生" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="250" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-4" value="窗口管理员" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="250" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-5" value="网络订餐" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="200" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-6" value="现场点餐" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="260" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-10" value="反馈评价" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="380" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-11" value="调整菜品" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="440" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-12" value="销售与收入查询" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="500" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-14" value="销售与收入查询" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-15" value="食堂座位管理" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="620" y="250" width="50" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-16" value="窗口位置指引" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="680" y="250" width="50" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-17" value="菜品推荐与排行" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="740" y="250" width="50" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-19" value="学生评价" style="rounded=0;whiteSpace=wrap;html=1;horizontal=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="320" y="310" width="50" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CbvcSDml5hShCORD96Lc-20" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="78" width="50" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
